@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Serif|Pacifico|ZCOOL+XiaoWei&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'PT Serif', serif;
+    margin: 0;
+}
+/*Estilos Generales*/
+img{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+h1, h2, h3, h4, h5 ,h6 {
+    margin: 0;
+}
+.container{
+    width: 100%;
+    margin: auto;
+}
+.container--flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.column{
+    width: 100%;
+}
+/*Para el encabezado(header)*/
+.main-header{
+    width: 100%;
+}
+.logo{
+    font-size: 1.8em;
+    color: teal;
+    padding: 10px;
+    font-family: 'ZCOOL XiaoWei', serif;
+}
+.main-header__Info__ubicacion{
+    background: teal;
+    color: beige;
+    margin: 0 auto;
+    padding: 10px;
+    font-family: 'ZCOOL XiaoWei', serif;
+    font-size: 0.65em;
+    text-align: center;
+}
+.main-header__Info__carrito{
+    background: teal;
+    color: beige;
+    margin: 0 auto;
+    padding: 10px;
+    font-family: 'ZCOOL XiaoWei', serif;
+    font-size: 0.65em;
+    text-align: center;
+}
+.main-header__Info__admin{
+    background: teal;
+    color: beige;
+    margin: 0 auto;
+    padding: 10px;
+    font-family: 'ZCOOL XiaoWei', serif;
+    font-size: 0.65em;
+    text-align: center;
+}
+.main-header [class*='icon-']:before{
+    position: relative;
+    top: 2px;
+    right: 5px; 
+}
+/*Para el menu*/
+.main-nav{
+    width: 100%;
+    position: relative;
+    z-index: 2500;
+    padding: 10px;
+}
+.menu {
+    position: absolute;
+    top: 60px;
+    left: 2px;
+    width: 100%;
+    background: rgba(0, 14, 11, 0.877);
+    padding: 0;
+    margin: 2px;
+    list-style: none;
+    text-align: left;
+    height: 0;
+    margin-top: -40px;
+    font-family: 'PT Serif', serif;
+}
+.menu__link{
+    display: block;
+    padding: 5px;
+    color: whitesmoke;
+    text-decoration: none;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.menu__link:hover{
+    background: teal;
+}
+.menu__link--select{
+    background: teal;
+}
+
+/*para el banner(imagen)*/
+.banner{
+    margin-top: -15px;
+    position: relative;
+}
+.banner:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    top: 0;
+}
+.banner__img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.banner__content{
+    width: 100%;
+    color: rgb(128, 241, 241);
+    text-align: center;
+    position: absolute;
+    z-index: 1800;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 2em;
+    font-weight: 100; 
+}
+/*estilos principales (cuerpo)*/
+.group--color .container{
+    background: teal;
+    color: white;
+    padding: 10px;   
+}
+.main__title{
+    font-family: 'Pacifico', cursive;
+    font-size: 2em;
+    text-align: center;
+    font-weight: 100;
+}
+
+.column__title{
+    font-size: 1.3em;
+    font-family: 'ZCOOL XiaoWei', serif;
+    font-weight: 100;
+}
+.special-product .column{
+    margin-bottom: 30px;
+}
+.special-product__img{
+    margin: auto;
+    max-width: 150px;
+}
+.special-product__title{
+    font-size: 1.1em;
+    font-family: 'PT Serif', serif;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: 100;
+}
+.special-product__price{
+    text-align: center;
+    font-size: 1.2em;
+    font-family: 'PT Serif', serif;
+    padding-bottom: 10px;
+    color: teal;
+}
+.group__title{
+    font-size: 2em;
+    font-family: 'ZCOOL XiaoWei', serif;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/*para la pagina de pie*/
+.main-footer{
+    background: rgb(1, 35, 46);
+    color: white;
+    padding: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: 'PT Serif', serif;
+    font-size: 0.8em;
+    text-align: left;
+}
+.icon-facebook{
+    position: relative;
+    top: 5px;
+    right: 3px;
+    color: white;
+    text-decoration: none;
+}
+/*Estilos responsive*/
+@media screen and (min-width:480px){
+    .logo{
+        font-size: 1.8em;
+        color: white;
+    }
+    .main-header__Info__ubicacion{
+        font-size: .95em;  
+        margin-left: -10px; 
+        margin-right: -15px; 
+    }
+    .main-header__contactInfo{
+        text-align: right;
+    }
+    .main-nav{
+        background: rgba(0, 0, 0, 0.85);
+    }
+    .main{
+        padding: 15px;
+    }
+    .banner{
+        margin-top: -110px;
+        z-index: -1000;
+        margin-left: -7px;
+        margin-right: -15px;
+
+    }
+    .banner__img{
+        height: 500px;
+        margin-left: -7px;
+        margin-right: -15px;
+    }
+    .banner__content{
+        font-size: 2em;
+    }
+    .menu__link{
+        display: block;
+        padding: 3px;
+    }
+    .column--7{
+        width: 12%;
+    }
+    .column--100{
+        width: 100%;
+    }
+    .column--50{
+        width: 50%;
+    }
+    .column--50-25{
+        width: 50%;
+    }
+    .column--33{
+        width: 30%;
+    }
+    .special-product .column{
+        border: 1px solid turquoise;
+        padding: 5px;    
+    }
+    .special-product__img{
+        height: 150px;
+        object-fit: cover;
+        margin: auto;
+        max-width: 150px;
+    }
+}
+@media screen and (min-width:768px){
+    .logo{
+        font-size: 2.2em;
+    }
+    .main-header__Info__carrito{
+        font-size: 1.1em;
+    }
+    .main-header__Info__admin{
+        font-size: 1.1em;   
+    }
+    .main-header__Info__ubicacion{
+        font-size: 1.1em;  
+        margin-left: -7px; 
+        margin-right: -15px; 
+    }
+    .banner{
+        margin-top: -150px;
+        margin-left: -7px;
+        margin-right: -15px; 
+        height: 600;
+    }
+    .banner__img{
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+    }
+    .banner__content{
+        font-size: 2.5em;
+    }
+    .menu__link{
+        margin-left: -7px;
+        margin-right: -14px; 
+        padding: 5px;    
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .main-nav{
+        margin-left: -7px;     
+    }
+    .main__title{
+        font-size: 3em;
+    }
+    .group__title{
+        font-size: 2.5em;
+    }
+    .column--50-25{
+        width: 24%;
+    }
+    .special-product__img{
+        height: 200px;
+        object-fit: cover;
+        margin: auto;
+        max-width: 200px;
+    }
+}
+@media screen and (min-width:1024px){
+    .logo{
+        font-size: 3em;
+    }
+    .banner{
+        margin-top: -180px;
+        margin-left: -7px;
+        margin-right: -15px; 
+        height: 600;
+    }
+    .banner__img{
+        width: 100%;
+        height: 570px;
+        object-fit: cover;
+    }
+    .banner__content{
+        font-size: 3em;
+    }
+    .menu__link{
+        margin-left: -7px;
+        margin-right: -10px; 
+        padding: 5px;    
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .main-nav{
+        margin-left: -7px;     
+    }
+    .main__title{
+        font-size: 3em;
+    }
+    .group__title{
+        font-size: 2.5em;
+    }
+    .column--50-25{
+        width: 24%;
+    }
+    .special-product__img{
+        height: 200px;
+        object-fit: cover;
+        margin: auto;
+        max-width: 200px;
+    }
+}
+@media screen and (min-width:1300px){
+    .logo{
+        font-size: 4em;
+    }
+    .banner{
+        margin-top: -180px;
+        margin-left: -7px;
+        margin-right: -15px; 
+        height: 600;
+    }
+    .banner__img{
+        width: 100%;
+        height: 570px;
+        object-fit: cover;
+    }
+    .banner__content{
+        font-size: 3em;
+    }
+    .menu__link{
+        margin-left: -7px;
+        margin-right: -10px; 
+        padding: 5px;    
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .main-nav{
+        margin-left: -7px;     
+    }
+    .main__title{
+        font-size: 3em;
+    }
+    .group__title{
+        font-size: 2.5em;
+    }
+    .column--50-25{
+        width: 24%;
+    }
+    .special-product__img{
+        height: 200px;
+        object-fit: cover;
+        margin: auto;
+        max-width: 200px;
+    }
+}
