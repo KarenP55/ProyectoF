@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Pagos1": {
+    "Mapas": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Pagos1",
+            "outputPath": "dist/Mapas",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -63,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Pagos1:build"
+            "browserTarget": "Mapas:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Pagos1:build:production"
+              "browserTarget": "Mapas:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Pagos1:build"
+            "browserTarget": "Mapas:build"
           }
         },
         "test": {
@@ -111,15 +111,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Pagos1:serve"
+            "devServerTarget": "Mapas:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Pagos1:serve:production"
+              "devServerTarget": "Mapas:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "Pagos1"
+  "defaultProject": "Mapas"
 }
