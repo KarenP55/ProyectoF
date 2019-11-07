@@ -17,7 +17,7 @@ export class AppComponent {
       icon: 'home'
     },
     {
-      title: 'IraAdmin',
+      title: 'Informacion',
       url: '/admin',
       icon: 'list'
     }

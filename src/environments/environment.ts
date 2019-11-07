@@ -3,7 +3,7 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false,
+ /* production: false,
   firebaseConfig: {
     apiKey: "AIzaSyBHZtTESaVvWxmQIRsi46Vl_CBSaF-DK5k",
     authDomain: "login-e3b2f.firebaseapp.com",
@@ -12,7 +12,20 @@ export const environment = {
     storageBucket: "login-e3b2f.appspot.com",
     messagingSenderId: "900012192561",
     appId: "1:900012192561:web:31c466d70cfd030ca1b610"
+  }*/
+
+    production: false,
+    firebaseConfig: {
+    apiKey: "AIzaSyCet9VsVcEWOzdMgYmqRqZqIWOvWYC-s8Y",
+    authDomain: "blitz-market.firebaseapp.com",
+    databaseURL: "https://blitz-market.firebaseio.com",
+    projectId: "blitz-market",
+    storageBucket: "blitz-market.appspot.com",
+    messagingSenderId: "718769693017",
+    appId: "1:718769693017:web:e53a05a7bc70d6fcb4ec48"
   }
+
+  
 };
 
 /*
