@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      BlitzMarket 
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card class="welcome-card">
+        <img src="https://i.pinimg.com/originals/e4/15/9b/e4159bd8b4e0dcbdda085502b7858f91.jpg" alt="" />
+        <ion-card-header>
+          <ion-card-subtitle>El mejor Market</ion-card-subtitle>
+          <ion-card-title>Bienvenido!!</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <p>BlitzMarket App </p>
+        </ion-card-content>
+      </ion-card>
+
+
+      <ion-list lines="none">
+          <ion-list-header>
+            <ion-label>Detalles</ion-label>
+          </ion-list-header>
+
+          <ion-item routerLink="/tabs">
+            <ion-icon slot="start" color="medium" name="book"></ion-icon>
+            <ion-label>Trabajos</ion-label>
+          </ion-item>
+
+          <ion-item routerLink="/almacen">
+            <ion-icon slot="start" color="medium" name="basket"></ion-icon>
+            <ion-label>Almacen</ion-label>
+          </ion-item>
+
+          <ion-item routerLink="/clientes">
+            <ion-icon slot="start" color="medium" name="person"></ion-icon>
+            <ion-label>Clientes</ion-label>
+          </ion-item>
+
+          <ion-item routerLink="/ayuda">
+            <ion-icon slot="start" color="medium" name="help-circle"></ion-icon>
+            <ion-label>Ayuda</ion-label>
+          </ion-item>
+
+        </ion-list>
+
+
+
+
+  <ion-button size="large" color="danger" (click)="onLogout()">
+    Logout
+  </ion-button>
+  
+  
+  
+</ion-content>
+
+

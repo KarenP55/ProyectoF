@@ -1,0 +1,32 @@
+<ion-header>
+    <ion-toolbar color="danger">
+      <ion-title>BlitzMarket App</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <img src="https://i.pinimg.com/originals/56/bd/91/56bd9103ce47a7ed8bc561b437e8d153.jpg" alt="" />
+  <img src="https://i.pinimg.com/564x/2f/03/01/2f03010a915c380e46e33db14ba68760.jpg" alt="" />
+
+  <ion-content padding>
+    
+    <ion-item>
+      <ion-label>
+        Email
+      </ion-label>
+      <ion-input type="text" [(ngModel)]="user.email"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+        <ion-label>
+          Password
+        </ion-label>
+        <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+    </ion-item>
+  
+      <ion-item-divider>
+        <ion-button size="large" color="danger" (click)="onLogin()">Login</ion-button>
+        <ion-button size="large" color="danger" routerLink="/register">New Account</ion-button>
+      </ion-item-divider>
+  
+  </ion-content>
+  
