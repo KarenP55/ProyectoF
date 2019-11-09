@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Serif|Pacifico|ZCOOL+XiaoWei&display=swap');
+.encabezado{
+    background: rgb(107, 1, 6);
+    height: 100px;
+    margin-top: -25px;
+}
+.titulo{
+    color: mintcream;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    font-size:3.5em ;
+}
+.main-nav{
+    width: 100%;
+    position: relative;
+    z-index: 2500;
+    padding: 10px;
+    align-content: center;
+}
+.menu {
+    position: absolute;
+    top: 60px;
+    left: 2px;
+    width: 100%;
+    padding: 0;
+    margin: 2px;
+    list-style: none;
+    text-align: left;
+    height: 0;
+    margin-top: -40px;
+    font-family: 'PT Serif', serif;
+}
+.menu__link{
+    display: block;
+    padding: 40px;
+    color: black;
+    text-decoration: none;
+    float: left;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 25px;
+    border: 1px solid black;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    align-content: center;
+    border-radius: 100px;
+    font-size: 1.2em;
+}
+.menu__link:hover{
+    background: rgb(163, 40, 40);
+}
+.menu__link--select{
+    background: rgb(163, 40, 40);
+}

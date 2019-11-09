@@ -1,0 +1,15 @@
+<header class="titulo-pago">Llene sus datos</header>
+<div class="pago">
+  <form class="pago-tarjeta" novalidate (ngSubmit)="buy()" [formGroup]= "stripeTest">
+    <input class="nombre" type="text" formControlName="name" placeholder="Correo/Nombre">
+    <hr>
+    <div id="card-element" class="field"></div>
+    <hr>
+    <button type="submit" class="botonpago">
+      BUY
+    </button>
+  </form>
+</div>
+<footer>
+  <img class="imagen" src="http://www.maderasamerica.com.ar/images/uploads/Macro%20VisaF.jpg">
+</footer>

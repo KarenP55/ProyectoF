@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Blitz Market</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+<header class="main-header">
+    <div class="container container--flex">
+        <div class="logo-container column column--50">
+            <h1 class="logo">Blitz Market</h1>
+        </div>
+        <div class="main-header__contactInfo column column--7">
+            <div class="main-header__Info__carrito">
+                <span class="icon-carrito">Su compra</span>
+            </div>
+        </div>
+        <div class="main-header__contactInfo column column--100">
+            <div class="main-header__Info__ubicacion">
+                <span class="icon-ubicacion">Blanco Galindo esq. Peru</span>
+            </div>
+        </div>
+    </div>
+</header>
+<nav class="main-nav">
+
+    <div class="container container--flex">
+        <ul class="menu" id="menu">
+            <li class="menu__item"><a href="" class="menu__link menu__link--select">Inicio</a></li>
+            <li class="menu__item"><a href="limpiezahogar" class="menu__link">Limpieza del Hogar</a></li>
+            <li class="menu__item"><a href="higienepersonal" class="menu__link">Higiene Personal</a></li>
+            <li class="menu__item"><a href="lacteos" class="menu__link">Lacteos</a></li>
+            <li class="menu__item"><a href="frutasyverduras" class="menu__link">Frutas y Verduras</a></li>
+            <li class="menu__item"><a href="bebidas" class="menu__link">Refrescos y Bebidas</a></li>
+            <li class="menu__item"><a href="itemsmascotas" class="menu__link">Items para Mascotas</a></li>
+        </ul>
+    </div>
+</nav>
+<section class="banner">
+    <img src="https://www.sheknows.com/wp-content/uploads/2019/04/grocery-store-produce.jpg?resize=695,391" alt="Banner" class="banner__img">
+    <div class="banner__content">El mejor Market de la clase</div>
+</section>
+<main class="main">
+    <section class="group group--color">
+        <div class="container">
+            <h2 class="main__title">Los productos mas buscados</h2>
+        </div>
+    </section>
+    <section class="container1 content-section">
+        <h2 class="section-header">Productos Favoritos</h2>
+        <div class="todos-productos">
+            <div class="productos"> 
+                <span class="productos-titulo">Coca Cola 2L</span>
+                <img class="productos-imagen" src="https://plazavea.vteximg.com.br/arquivos/ids/178238-450-450/20100019.jpg?v=635909109266130000">
+                <div class="productos-detalles">
+                    <span class="productos-precio">15 Bs</span>
+                    <button class="boton boton-primario" role="button">Comprar</button>
+                </div>
+            </div>
+            <div class="productos"> 
+                <span class="productos-titulo">Font Bella 6.25L</span>
+                <img class="productos-imagen" src="https://images-na.ssl-images-amazon.com/images/I/4148%2BwGbNhL.jpg">
+                <div class="productos-detalles">
+                    <span class="productos-precio">20 Bs</span>
+                    <button class="boton boton-primario" role="button">Comprar</button>
+                </div>
+            </div>
+            <div class="productos">  
+                <span class="productos-titulo">Pepsi 2L</span>
+                <img class="productos-imagen" src="https://www.sucompraencasa.es/987-large_default/pepsi-cola-2l.jpg" alt="Pepsi">
+                <div class="productos-detalles">
+                    <span class="productos-precio">10 Bs</span>
+                    <button class="boton boton-primario" role="button">Comprar</button>
+                </div>
+            </div>
+            <div class="productos"> 
+                <span class="productos-titulo">Pura Vida 2L</span>
+                <img class="productos-imagen" src="https://pilexpress.com.bo/wp-content/uploads/2019/05/Nectar-duraznoPURA-VIDA-FRUTSS-2L-600x600.jpg" alt="Pura Vida">
+                <div class="productos-detalles">
+                    <span class="productos-precio">13 Bs</span>
+                    <button class="boton boton-primario" role="button">Comprar</button>
+                </div>
+            </div>  
+        </div>
+    </section>
+    <hr>
+    <section class="container1 content-section">
+        <h2 class="section-header">Productos elegidos</h2>
+        <div class="carrito-fila">
+            <span class="producto-carrito carrito-header carrito-columna">Producto</span>
+            <span class="precio-carrito carrito-header carrito-columna">Precio</span>
+            <span class="cantidad-carrito carrito-header carrito-columna">Cantidad</span>
+        </div>
+        <div class="carrito-items">
+            <div class="carrito-fila">
+                <div class="producto-carrito carrito-columna">
+                    <img class="producto-carrito-img" src="https://plazavea.vteximg.com.br/arquivos/ids/178238-450-450/20100019.jpg?v=635909109266130000" >
+                    <span class="producto-carrito-titulo">Coca Cola 2L</span>
+                </div>
+                <span class="precio-carrito carrito-columna">15 Bs</span>
+                <div class="cantidad-carrito carrito-columna">
+                    <input class="cantidad-carrito-input" type="number" value="1">
+                    <button class="boton boton-danger" role="button">Quitar</button>
+                </div>
+            </div>
+            <div class="carrito-fila">
+                <div class="producto-carrito carrito-columna">
+                    <img class="producto-carrito-img" src="https://www.sucompraencasa.es/987-large_default/pepsi-cola-2l.jpg" >
+                    <span class="producto-carrito-titulo">Pepsi 2L</span>
+                </div>
+                <span class="precio-carrito carrito-columna">10 Bs</span>
+                <div class="cantidad-carrito carrito-columna">
+                    <input class="cantidad-carrito-input" type="number" value="2">
+                    <button class="boton boton-danger" role="button">Quitar</button>
+                </div>
+            </div>
+        </div>
+            <hr>
+            <div class="carrito-preciotot">
+                <strong class="carrito-preciotot-titulo">Precio Total</strong>
+                <span class="carrito-preciotot-precio">25 Bs.</span>
+            </div>
+                <button routerLink="/pagos" class=" boton boton-primario boton-compra" role="button">Realizar Compra</button>
+    </section>
+   
+</main>
+<footer class="main-footer">
+    <div class="container container--flex">
+        <div class="column column--33">
+            <h2 class="column__title">Mas sobre nosotros..</h2>
+            <p class="column__txt">Blitzmarket se fundo...</p>  
+        </div>
+        <div class="column column--33">
+            <h2 class="column__title">Mision</h2>
+            <p class="column__txt">Proporcionar un servicio excepcional a los clientes..</p>
+            <h3 class="column__title">Vision</h3>
+            <p class="column__txt">Ser un referente....</p>
+        </div>
+        <div class="column column--33">
+            <h2 class="column__title">Mantente en contacto</h2>
+            <p class="column__txt"><a href="https://www.facebook.com" class="icon-facebook" target="blank">Facebook</a></p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
